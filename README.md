@@ -1,16 +1,23 @@
 # KillBeam
 Music
 
-1.1 Objective The primary aim of the project was to develop an enjoyable
+Objective 
+
+The primary aim of the project was to develop an enjoyable
 musical tool which supports playback and displays colorful LED lights while the
 tracks play.
 
-1.2 Features The following features characterize the Music Player using Raspberry Pi and Sense HAT : (i) Supports playback features- Play Music (ii) Display colorful lights on the LED matrix in synchronization with the beats being
+
+Features 
+The following features characterize the Music Player using Raspberry Pi and Sense HAT : (i) Supports playback features- Play Music (ii) Display colorful lights on the LED matrix in synchronization with the beats being
 captured from the track.
 
-2 Method
-2.1 System Design The development of the system ’Beats and Gleams’ can
-be seen as a three step process(Figure 1).The very first step being the playing of
+Method
+
+System Design 
+
+The development of the system ’Beats and Gleams’ can
+be seen as a three step process.The very first step being the playing of
 soundtrack in wave audio file(.wav) format. The second step follows to be the
 detection of beats from the wave audio file.In this The last step of the process
 was glowing the LED matrix at specific XY co-ordinate positions with one of
@@ -33,8 +40,11 @@ and the final matrix was computed. In the third step, the matrix obtained from
 the second step was scaled and on the basis of X and Y co-ordinates of the pixels
 on the LED matrix
 
-2.2 System Implementation The system was implemented using Python
-3.The following packages were used- alsaaudio,wave,numpy,struct,sensehat.
+System Implementation 
+
+The system was implemented using Python
+
+The following packages were used- alsaaudio,wave,numpy,struct,sensehat.
 
 The function numpy.fft.rfft was used to compute ”the one-dimensional n-point
 discrete Fourier Transform (DFT) of a real-valued array by means of an efficient
@@ -47,13 +57,16 @@ where=True, casting=’samekind’, order=’K’, dtype=None, subok=True[, sign
 array, element-wise[1].
 
 
-3 Results
+Results
+
 The lights were glowing in one of the three colors - green ,yellow or red depending
 on the beats of the music that was played.For low beats , green color LEDs were
 lighting, for medium level beats , yellow color LEDS were seen to be lighting
 and for high beats, red color LEDs could be spotted.
 
-4 Conclusions
+
+Conclusions
+
 The developed system can be used as tool for entertainment particularly as
 music players with display unit where fancy LED lights can be displayed. There
 is the scope of extending the development of the system in a multi threaded
